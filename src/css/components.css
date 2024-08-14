@@ -1,0 +1,30 @@
+/*colors for background and text*/
+.text-color-1 {
+  color: #f57e9a;
+}
+.text-color-2 {
+  color: #e4decc;
+}
+.text-color-3 {
+  color: #59766c;
+}
+.bg-color-1 {
+  background-color: #f57e9a;
+}
+.bg-color-2 {
+  background-color: #e4decc;
+}
+.bg-color-3 {
+  background-color: #59766c;
+}
+
+.cta-btn {
+  @apply bg-color-1 py-3 px-6 font-zapf text-white text-base rounded-lg max-w-max;
+}
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid black;
+}

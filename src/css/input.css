@@ -1,0 +1,21 @@
+@import "./header.css";
+
+@import "./components.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+header {
+  overflow-x: hidden;
+}
+
+/*fix the dropdown menu from header on mobile view*/
+@media (max-width: 768px) {
+  #dropdownNavbar {
+    position: sticky !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+}

@@ -1,0 +1,70 @@
+/* src/styles./src/css/fonts.css */
+
+@font-face {
+  font-family: "ZapfHumnst";
+  src: url("./fonts/ZapfHumnst-BT/ZapfHumnst-BT-Bold-Italic.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZapfHumnst";
+  src: url("./fonts/ZapfHumnst-BT/ZapfHumnst-BT-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZapfHumnst";
+  src: url("./fonts/ZapfHumnst-BT/ZapfHumnst-BT-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZapfHumnst-roman";
+  src: url("./fonts/ZapfHumnst-BT/ZapfHumnst-BT-Roman.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZapfHumnst";
+  src: url("./fonts/ZapfHumnst-BT/ZapfHumnst-Dm-BT-Demi-Italic.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZapfHumnst";
+  src: url("../fonts/ZapfHumnst-BT/ZapfHumnst-Dm-BT-Demi.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZapfHumnst";
+  src: url("./fonts/ZapfHumnst-BT/ZapfHumnst-Ult-BT-Ultra.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZapfHumnst";
+  src: url("./fonts/ZapfHumnst-BT/ZapfHumnst-Ult-BT-Ultra-Italic.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
