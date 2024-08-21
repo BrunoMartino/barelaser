@@ -10,7 +10,8 @@ module.exports = {
     extend: {
       fontFamily: {
         zapf: ['"ZapfHumnst"', "sans-serif"],
-        zapfRoman: ['"ZapfHumnst-roman"', "sans-serif"],
+        zapfDm: ['"ZapfHumnst-Dm-BT"', "sans-serif"],
+        zapfUlt: ['"ZapfHumnst-Ult-BT"', "sans-serif"],
       },
     },
   },

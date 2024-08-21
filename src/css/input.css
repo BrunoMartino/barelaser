@@ -1,6 +1,10 @@
-@import "./header.css";
-
+@import "@splidejs/splide/dist/css/splide.min.css";
+@import "./fonts.css";
 @import "./components.css";
+
+@import "./header.css";
+@import "./footer.css";
+@import "./home-page.css";
 
 @tailwind base;
 @tailwind components;

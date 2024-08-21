@@ -1,0 +1,40 @@
+.footer__wrapper {
+  @apply container mx-auto flex flex-col justify-center items-start lg:flex-row lg:justify-between  px-8 lg:px-16 gap-16 lg:gap-0;
+}
+.footer__cta-logo {
+  @apply flex flex-col items-start gap-8 lg:gap-12;
+}
+.footer__cta-logo img {
+  @apply w-52 lg:w-64 h-full;
+}
+.cta-footer {
+  @apply flex items-center gap-2 rounded-full hover:bg-[#D45472] hover:text-white;
+}
+.cta-footer p {
+  @apply text-black font-zapf capitalize text-base;
+}
+.cta-footer img {
+  @apply w-4 h-4;
+}
+.footer__menus-container {
+  @apply grid grid-cols-2 gap-10 pb-10;
+}
+.footer__menu {
+  @apply flex flex-col flex-wrap max-h-64 font-zapf;
+}
+.footer__menu h2 {
+  @apply text-color-1 font-semibold mb-5;
+}
+#menu-footer-company,
+#menu-products-footer {
+  @apply flex flex-col flex-wrap gap-3 font-zapf;
+}
+.menu-contact a {
+  @apply mb-3;
+}
+.footer__end {
+  @apply px-8 lg:px-16 gap-16 bg-color-1;
+}
+.footer__end-container {
+  @apply container mx-auto py-10 font-zapf text-white;
+}

@@ -1,0 +1,206 @@
+/*control styles for video bg and buttons in sess1*/
+#sess1__home {
+  @apply mt-28 relative w-screen h-screen overflow-hidden;
+}
+.sess1__home-video__bg,
+.bg-placeholder {
+  @apply absolute top-0 left-0 w-full h-full object-cover z-0 bg-[#4D4D4D];
+}
+.sess1__home-wrapper {
+  @apply relative z-10 flex flex-col items-center justify-end h-full text-white pb-20 px-4;
+}
+.sess1__home-wrapper h1 {
+  @apply font-zapfDm text-5xl font-semibold text-center mb-8 lg:mb-16 lg:text-7xl lg:max-w-3xl;
+}
+.sess1__home-wrapper h1:after {
+  content: "";
+  width: 240px;
+  height: 8px;
+  display: none;
+  background: url("../imgs/home-headline-underline.svg") center center no-repeat;
+  @apply lg:ml-[310px] lg:block;
+}
+.sess1__home-btn_container ul {
+  @apply font-zapf flex gap-x-4 gap-y-4 justify-center items-center flex-wrap max-w-md lg:max-w-3xl;
+}
+.sess1__home-btn_container li a {
+  @apply py-3 px-6 font-zapf text-white text-base rounded-full;
+}
+.sess1__home-btn_container li:first-child a {
+  @apply bg-color-1;
+}
+.sess1__home-btn_container li:nth-child(2) a {
+  @apply bg-white text-color-3;
+}
+.sess1__home-btn_container li:last-child {
+  @apply mt-5 lg:mt-0;
+}
+.sess1__home-btn_container li:last-child a {
+  @apply bg-color-3 text-white;
+}
+/*control styles for slide and services in sess2*/
+#sess2__home {
+  @apply container mx-auto py-16 lg:py-20 px-8 flex flex-col items-center;
+}
+#sess2__home h2 {
+  @apply font-zapfUlt text-color-3 text-center text-3xl lg:text-5xl mb-10 lg:max-w-3xl;
+}
+#sess2__home-slide {
+  @apply px-16;
+}
+#sess2__home-slide .splide__track {
+  @apply pb-10;
+}
+.splide__pagination__page {
+  @apply bg-color-3 opacity-85;
+}
+.splide__pagination__page.is-active {
+  @apply bg-color-3 opacity-100;
+}
+.splide__arrow {
+  @apply w-8 h-16 bg-transparent opacity-100;
+}
+.splide__arrow svg {
+  @apply w-8 h-16 fill-[#0B5D51] stroke-[#0B5D51];
+}
+.product__slide {
+  @apply w-full h-[480px] rounded-t-full rounded-b-full overflow-hidden relative;
+}
+.product__slide a {
+  @apply block relative text-center text-white;
+}
+.product__slide a > img {
+  @apply w-full h-[480px] object-cover rounded-t-full rounded-b-full;
+}
+.product__bg-gradient {
+  @apply absolute w-full inset-0 bg-gradient-to-b from-[#f57e9a]/75 to-[#59766c]/75 rounded-t-full rounded-b-full;
+}
+.product__slide-content {
+  @apply absolute inset-0 flex flex-col justify-evenly items-center;
+}
+.product__slide-content h3 {
+  @apply relative z-10 text-3xl font-zapfDm max-w-[10ch];
+}
+.product__slide-content .content__arrow {
+  @apply relative z-10 mt-4;
+}
+.content__arrow {
+  @apply bg-white w-10 h-10 flex items-center justify-center rounded-full;
+}
+.content__arrow img {
+  @apply h-4 w-4;
+}
+/*control styles for slide and services in sess3*/
+
+#sess3__home {
+  @apply bg-color-1;
+}
+.sess3__home-container {
+  @apply container mx-auto flex flex-col lg:flex-row items-start justify-between px-8;
+}
+.sess3__home-img {
+  @apply lg:max-w-3xl h-full object-cover;
+}
+.sess3__home-content {
+  @apply my-20 lg:mt-40 text-white;
+}
+.sess3__home-content h2 {
+  @apply font-zapf font-bold text-3xl lg:text-5xl max-w-xl lg:mb-20;
+}
+.member__adv-list {
+  @apply font-zapf text-2xl flex flex-col gap-y-5 mb-16;
+}
+.member__adv-item p {
+  @apply flex items-center gap-3;
+}
+.member__adv-item p:before {
+  content: "";
+  background: url("../imgs/checked.svg") center center no-repeat;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+}
+.sess3__home-subtitle {
+  @apply max-w-xl font-zapf text-xl mb-16;
+}
+.sess3-cta {
+  @apply bg-white text-color-1 font-semibold rounded-full;
+}
+/*control styles for slide and services in sess4*/
+
+#sess4__home {
+  @apply py-28;
+}
+
+.sess4__home-container {
+  @apply container mx-auto flex items-center justify-center px-8;
+}
+
+.membership__table {
+  @apply font-zapf overflow-hidden border-collapse table-fixed w-full;
+}
+
+.membership__table thead th,
+.membership__table tbody tr th,
+.membership__table tbody tr td {
+  @apply py-2 px-4 border-2 border-gray-200 min-w-[280px] w-[280px];
+}
+.membership__table thead th:first-child {
+  @apply text-black;
+}
+.membership__table tbody tr th {
+  @apply text-lg lg:text-2xl;
+}
+.membership__table tbody tr:last-child th,
+.membership__table tbody tr:last-child td {
+  @apply border-none pt-6 text-center;
+}
+.membership__table tbody tr th p,
+.membership__table tbody tr td p {
+  @apply text-xs md:text-sm font-zapf;
+}
+
+.membership_table-cta {
+  @apply bg-color-3 text-white font-semibold text-sm lg:text-base rounded-full;
+}
+.membership__table thead th,
+.membership__table tbody tr td .membership__table-price {
+  @apply text-color-1 text-3xl text-center font-semibold;
+}
+
+/*control styles for slide and services in sess5*/
+
+#sess5__home {
+  @apply bg-color-3 py-20;
+}
+
+.sess5__home-container {
+  @apply container mx-auto flex items-center gap-x-40 px-8;
+}
+.sess5__img img {
+  @apply w-[600px] h-full object-cover rounded-t-full;
+}
+.sess5__home-content__container {
+  @apply grid grid-cols-2 items-end;
+}
+.sess5__home-content {
+  @apply flex flex-col gap-y-24 text-white;
+}
+.sess5__home-content h2 {
+  @apply font-zapfUlt text-3xl lg:text-5xl max-w-md;
+}
+.sess5__home-content-text {
+  @apply font-zapf text-base max-w-[40ch];
+}
+.sess5__cta {
+  @apply rounded-full;
+}
+.sess5__home-services {
+  @apply font-zapf text-white text-lg;
+}
+.sess5__home-services h3 {
+  @apply uppercase font-bold;
+}
+.sess5__home-services p {
+  @apply mb-3;
+}

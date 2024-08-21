@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @splidejs/splide */ \"../../../../../../../../../node_modules/@splidejs/splide/dist/js/splide.esm.js\");\n\r\n\n\n//# sourceURL=webpack://bare-laser-zion/./src/js/modules/pageSlide.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @splidejs/splide */ \"../../../../../../../../../node_modules/@splidejs/splide/dist/js/splide.esm.js\");\n\r\n\r\n/* control slides in Home Page */\r\n\r\nconst productSlide = document.getElementById(\"sess2__home-slide\");\r\n\r\nif (productSlide) {\r\n  const sess2Slide = new _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__[\"default\"](productSlide, {\r\n    type: \"loop\",\r\n    rewind: true,\r\n    pagination: false,\r\n    arrows: true,\r\n    autoplay: true,\r\n    perPage: 4,\r\n    gap: \"32px\",\r\n    breakpoints: {\r\n      960: {\r\n        perPage: 2,\r\n        pagination: true,\r\n      },\r\n      640: {\r\n        perPage: 1,\r\n        width: \"450px\",\r\n      },\r\n    },\r\n  });\r\n  sess2Slide.mount();\r\n}\r\n\n\n//# sourceURL=webpack://bare-laser-zion/./src/js/modules/pageSlide.js?");
 
 /***/ }),
 
