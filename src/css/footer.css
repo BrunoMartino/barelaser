@@ -1,5 +1,14 @@
+#social__media {
+  @apply bg-color-3 py-20;
+}
+.social__media-container {
+  @apply container mx-auto flex flex-col items-center justify-center px-8;
+}
+.social__media-container h2 {
+  @apply font-zapfUlt font-bold text-white text-center text-3xl lg:text-5xl mb-10;
+}
 .footer__wrapper {
-  @apply container mx-auto flex flex-col justify-center items-start lg:flex-row lg:justify-between  px-8 lg:px-16 gap-16 lg:gap-0;
+  @apply container mx-auto flex flex-col justify-center items-start lg:flex-row lg:justify-between pt-10 px-8 lg:px-16 gap-16 lg:gap-0;
 }
 .footer__cta-logo {
   @apply flex flex-col items-start gap-8 lg:gap-12;

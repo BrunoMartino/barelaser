@@ -3,9 +3,9 @@
 ?>
 <footer>
 <article id="social__media">
-  <div class="socila__media-container">
+  <div class="social__media-container">
     <h2>Follow us on Instagram!</h2>
-    <!-- <?php //echo do_shorcode('') ?> -->
+    <?php echo do_shortcode('[instagram-feed feed=1]') ?>
   </div>
 </article>
   <div class="footer__wrapper">
