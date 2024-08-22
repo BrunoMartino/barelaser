@@ -175,16 +175,16 @@
 }
 
 .sess5__home-container {
-  @apply container mx-auto flex items-center gap-x-40 px-8;
+  @apply container mx-auto flex flex-col lg:flex-row items-center gap-x-40 px-8;
 }
 .sess5__img img {
   @apply w-[600px] h-full object-cover rounded-t-full;
 }
 .sess5__home-content__container {
-  @apply grid grid-cols-2 items-end;
+  @apply grid grid-cols-1 lg:grid-cols-2 lg:items-end mt-10 lg:mt-0 gap-y-12;
 }
 .sess5__home-content {
-  @apply flex flex-col gap-y-24 text-white;
+  @apply flex flex-col  gap-y-12 lg:gap-y-24 text-white;
 }
 .sess5__home-content h2 {
   @apply font-zapfUlt text-3xl lg:text-5xl max-w-md;
@@ -203,4 +203,66 @@
 }
 .sess5__home-services p {
   @apply mb-3;
+}
+/*control styles for slide and services in sess6*/
+
+#sess6__home {
+  @apply py-24;
+}
+.sess6__home-container {
+  @apply container mx-auto flex flex-col items-start justify-center px-8;
+}
+.sess6__home-container h2 {
+  @apply font-zapfDm text-color-1 font-semibold text-3xl lg:text-5xl mb-16;
+}
+
+/*control styles for slide and services in sess7*/
+
+#sess7__home {
+  @apply relative w-screen h-screen overflow-hidden;
+}
+#sess7__home img {
+  @apply absolute top-0 left-0 w-full h-full object-cover z-0;
+}
+.sess7__home-container {
+  @apply relative z-10 flex flex-col items-center justify-center h-full;
+}
+.sess7__home-wrapper {
+  @apply p-24 lg:py-32 lg:px-48 flex flex-col items-center justify-center;
+}
+.sess7__home-wrapper h2 {
+  @apply font-zapfUlt font-bold text-xl lg:text-3xl text-color-1 bg-white p-3 mb-16 text-center;
+}
+.sess7__cta {
+  @apply rounded-full;
+}
+#sess8__home {
+  @apply bg-color-1 pt-24;
+}
+.sess8__home-container {
+  @apply container mx-auto relative overflow-hidden flex max-w-7xl px-8;
+}
+.sess8__home-container img {
+  @apply absolute -bottom-36 lg:-bottom-14 left-0 w-full h-full object-contain z-0;
+}
+.sess8__home-newsform {
+  @apply relative z-10 flex flex-col items-center justify-center w-full h-full gap-y-10  lg:gap-y-20 pt-10;
+}
+.sess8__home-newsform h2 {
+  @apply font-zapfUlt font-bold text-3xl lg:text-5xl max-w-lg text-white text-center;
+}
+.sess8__home-newsform p {
+  @apply font-zapf text-2xl text-white;
+}
+.gform_title {
+  @apply hidden;
+}
+#gform_5 {
+  @apply flex items-center justify-center gap-8 pb-24;
+}
+#input_5_3 {
+  @apply w-[700px] border-none rounded-full font-zapf text-gray-400 pl-8 py-3;
+}
+#gform_submit_button_5 {
+  @apply bg-black py-3 px-6 font-zapf text-white text-base rounded-full max-w-max;
 }

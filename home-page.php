@@ -144,31 +144,40 @@ get_header();
         </div>
       </div>
   </section>
+  <?php 
+   $shorcode_content = get_field('google_shortcode');
+   if($shorcode_content) {
+  ?>
   <!-- adicionar regra que esconde a sessão se o shorcode não existir -->
   <section id="sess6__home">
     <div class="sess6__home-container">
       <h2><?php the_field('sess6_headline') ?></h2>
       <?php 
-      $shorcode_content = get_field('google_shortcode');
-              
       echo do_shortcode( $shorcode_content )
       ?>
     </div>
   </section>
+  <?php }?>
   <section id="sess7__home">
     <img src="<?php the_field('sess7_img_bg') ?>" alt="<?php the_field('sess7_headline') ?>">
     <div class="sess7__home-container">
+      <div class="sess7__home-wrapper sess7__home-parallax">
       <h2><?php the_field('sess7_headline') ?></h2>
       <a href="<?php the_field('sess7_cta_link') ?>" class="cta-btn sess7__cta"><?php the_field('sess7_cta_label') ?></a>
+      </div>
     </div>
   </section>
   <section id="sess8__home">
     <div class="sess8__home-container">
-      <h2><?php the_field('sess8_headline') ?></h2>
+    <img src="<?php the_field('sess8_img_bg') ?>" alt="background logo">
+    <div class="sess8__home-newsform">
+    <h2><?php the_field('sess8_headline') ?></h2>
+    <p><?php the_field('sess8_cta_form') ?></p>
       <?php 
       $shorcode_content = get_field('form_shorcode');
       echo do_shortcode( $shorcode_content )
       ?>
+    </div>
     </div>
   </section>
 </main>
