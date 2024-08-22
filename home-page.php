@@ -21,7 +21,7 @@ get_header();
     <?php } else {?>
     <div class="bg-placeholder"></div>
     <?php }?>
-    <div class="sess1__home-wrapper">
+    <div class="sess1__home-wrapper" data-anima="scroll">
       <h1><?= the_field('sess1_title') ?></h1>
       <nav class="sess1__home-btn_container">
       <ul>
@@ -57,7 +57,7 @@ get_header();
   </section>
   <section id="sess3__home">
     <div class="sess3__home-container">
-      <div class="sess3__home-content">
+      <div class="sess3__home-content" data-anima="scroll">
         <h2 class="sess3__title"><?= the_field('sess3_title') ?></h2>
         <ul class="member__adv-list">
         <?php foreach($sess3_adv as $adv) { ?>
@@ -69,7 +69,7 @@ get_header();
         <p class="sess3__home-subtitle"><?= the_field('sess3_subtitle') ?></p>
         <a class="cta-btn sess3-cta" href="<?= the_field('sess3_button_link') ?>"><?= the_field('sess3_button_cta') ?></a>
       </div>
-      <div class="sess3__home-img">
+      <div class="sess3__home-img" data-anima="scroll">
         <img src="<?= the_field('sess3_image') ?>" alt="<?= the_field('sess3_title') ?>">
       </div>
     </div>
@@ -77,7 +77,7 @@ get_header();
   <section id="sess4__home">
     <div class="sess4__home-container">
     <div class="overflow-x-auto lg:overflow-x-hidden pb-8">
-    <table class="membership__table">
+    <table class="membership__table" data-anima="scroll">
     <thead>
     <tr>
       <th>Feature/Benefit</th>
@@ -124,11 +124,11 @@ get_header();
   </section>
   <section  id="sess5__home">
       <div class="sess5__home-container">
-        <div class="sess5__img">
+        <div class="sess5__img" data-anima="scroll">
           <img src="<?php the_field('sess5__img') ?>" alt="<?php the_field('sess5_headline') ?>">
         </div>
         <div class="sess5__home-content__container">
-          <div class="sess5__home-content">
+          <div class="sess5__home-content" data-anima="scroll">
             <h2><?php the_field('sess5__headline') ?></h2>
             <div class="sess5__home-content-text">
             <?php the_field('sess5_small_text') ?>
@@ -170,7 +170,7 @@ get_header();
   <section id="sess8__home">
     <div class="sess8__home-container">
     <img src="<?php the_field('sess8_img_bg') ?>" alt="background logo">
-    <div class="sess8__home-newsform">
+    <div class="sess8__home-newsform" data-anima="scroll">
     <h2><?php the_field('sess8_headline') ?></h2>
     <p><?php the_field('sess8_cta_form') ?></p>
       <?php 
