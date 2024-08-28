@@ -11,6 +11,7 @@
 <header>
 <?php 
     $img_url = get_stylesheet_directory_uri() . '/dist/imgs';
+    $cart_count = WC()->cart->get_cart_contents_count();
     ?>
 <nav id="header__nav" class=" border-gray-200 dark:bg-gray-900">
   <div class="nav__container ">
@@ -32,7 +33,15 @@
             'container_class' => 'sidebar__nav',
         ]);
         ?>
+        
     </div>
+    <div class="header__cart">
+        <a id="cart__link"  href="/cart" ><img src="<?=$img_url . '/cart.svg'?>" alt="my cart">
+        <?php if($cart_count) { ?>
+          <span class='header__cart-count'><?= $cart_count; ?></span>
+        <?php };?>
+        </a>
+      </div>
   </div>
 </nav>
 </header>

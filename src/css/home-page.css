@@ -51,18 +51,6 @@
 #sess2__home-slide .splide__track {
   @apply pb-10;
 }
-.splide__pagination__page {
-  @apply bg-color-3 opacity-85;
-}
-.splide__pagination__page.is-active {
-  @apply bg-color-3 opacity-100;
-}
-.splide__arrow {
-  @apply w-8 h-16 bg-transparent opacity-100;
-}
-.splide__arrow svg {
-  @apply w-8 h-16 fill-[#0B5D51] stroke-[#0B5D51];
-}
 .product__slide {
   @apply w-full h-[480px] rounded-t-full rounded-b-full overflow-hidden relative;
 }

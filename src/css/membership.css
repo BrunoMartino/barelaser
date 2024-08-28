@@ -1,0 +1,320 @@
+/*control bg images for mobile and desk*/
+.sess1__member-bg-desk,
+.sess3__member-bg-desk,
+.sess6__member-bg-desk {
+  @apply hidden lg:block;
+}
+.sess1__member-bg-mobile,
+.sess3__member-bg-mobile,
+.sess6__member-bg-mobile {
+  @apply block lg:hidden;
+}
+/*control styles for video bg and buttons in sess1*/
+#sess1__member {
+  @apply relative w-screen h-screen overflow-hidden;
+}
+#sess1__member img {
+  @apply absolute top-0 left-0 w-full h-full object-cover z-0;
+}
+.sess1__member-container {
+  @apply relative z-10 flex flex-col items-center justify-end h-full text-white pb-20 px-4;
+}
+.sess1__member-container h1 {
+  @apply font-zapfDm text-5xl font-semibold text-center mb-8 lg:mb-16 lg:text-7xl lg:max-w-3xl;
+}
+.sess1__member-cta {
+  @apply rounded-full font-semibold animate-bounce;
+}
+.sess1__member-container h1:after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  display: none;
+  background: url("../imgs/member-headline-underline.svg") center center
+    no-repeat;
+  @apply lg:block;
+}
+
+/*control styles for slide and services in sess2*/
+#sess2__member {
+  @apply container mx-auto py-16 lg:py-20 flex flex-col items-center;
+}
+
+#sess2__member h2 {
+  @apply text-color-1 font-zapf capitalize font-semibold text-3xl lg:text-5xl mb-8 animate-pulse;
+}
+
+#sess2__member-plans__slides {
+  @apply container mx-auto px-11 lg:px-4;
+}
+#sess2__member-plans__slides .splide__track {
+  @apply h-[85vh] pb-96 relative;
+}
+#sess2__member-plans__slides ul {
+  @apply h-[85vh];
+}
+.plan__item {
+  @apply max-w-sm bg-gray-100 shadow-md h-full rounded-2xl flex flex-col items-stretch;
+}
+.plan__item-content {
+  @apply py-8 px-6 h-full font-zapf;
+}
+.plan__item-content h3 {
+  @apply font-bold text-3xl lg:text-4xl py-2 px-4 text-center rounded-full mb-3;
+}
+.plan-title-0 {
+  @apply text-white bg-gradient-to-b from-[#4B4B4B] to-[#2E2E2E];
+}
+.plan-title-1 {
+  @apply text-white bg-gradient-to-b from-[#F5C300] to-[#D4A700];
+}
+.plan-title-2 {
+  @apply text-white bg-gradient-to-b from-[#B0B0B0] to-[#9E9E9E];
+}
+.plan-title-3 {
+  @apply text-white bg-gradient-to-b from-[#6E6E9E] to-[#4A4A7E];
+}
+.plan__price {
+  @apply text-2xl lg:text-3xl font-bold text-center mb-2;
+}
+.plan__description {
+  @apply text-sm;
+}
+.plan__description p {
+  @apply mb-2 lg:mb-3;
+}
+.plan__service {
+  @apply flex items-start;
+}
+.plan__service:before {
+  content: "";
+  width: 0.25rem;
+  height: 0.25rem;
+  display: block;
+  background: black;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
+  flex-shrink: 0;
+}
+.plan__additional {
+  @apply font-bold;
+}
+.plan__excluded {
+  @apply capitalize;
+}
+/*control styles for slide and services in sess3*/
+#sess3__member {
+  @apply relative w-screen h-[85vh] overflow-hidden;
+}
+#sess3__member img {
+  @apply absolute top-0 left-0 w-full h-full object-cover object-left z-0;
+}
+.sess3__member-container {
+  @apply relative z-10 flex flex-col items-center justify-center h-full px-4 py-10;
+}
+#sess3__member-laser__slides {
+  @apply container mx-auto px-11;
+}
+#sess3__member-laser__slides .splide__track {
+  @apply pb-16;
+}
+.sess3__member-container > h2 {
+  @apply font-zapf text-3xl lg:text-5xl font-bold text-color-1 mb-2;
+}
+.sess3__member-container > p {
+  @apply font-zapf text-3xl lg:text-5xl font-bold mb-14;
+}
+.laser__items {
+  @apply bg-white flex flex-col items-center justify-start py-8 px-12 rounded-2xl;
+}
+.laser__items h3 {
+  @apply font-zapf font-bold text-2xl lg:text-4xl text-center mb-8;
+}
+.laser__content p {
+  @apply text-center font-zapf font-normal capitalize mb-2;
+}
+/*control styles for slide and services in sess4*/
+#sess4__member {
+  @apply bg-color-1 py-16;
+}
+.sess4__member-container {
+  @apply container mx-auto px-8 flex flex-col-reverse items-center lg:flex-row lg:justify-evenly lg:items-center gap-y-16;
+}
+.sess4__member-img {
+  @apply max-w-sm lg:max-w-md h-full object-cover rounded-t-full;
+}
+.sess4__member-content {
+  @apply text-white font-zapf max-w-md lg:pt-16;
+}
+
+.sess4__member-content h2 {
+  @apply font-zapf text-3xl lg:text-5xl font-bold mb-14;
+}
+
+.sess4__member-content .headline {
+  @apply text-lg font-bold mb-8;
+}
+.sess4__member-content__text p {
+  @apply text-base mb-2;
+}
+/*control styles for slide and services in sess5*/
+#sess5__member {
+  @apply container mx-auto py-16;
+}
+#sess5__member h2 {
+  @apply font-zapf text-3xl lg:text-5xl font-bold text-color-1 mb-16 text-center animate-pulse;
+}
+#sess5__member-benefits__slides {
+  @apply container mx-auto py-10 px-11;
+}
+#sess5__member-benefits__slides .splide__track {
+  @apply pb-12;
+}
+
+.benefits__item {
+  @apply font-zapf text-center text-2xl font-bold relative flex items-center justify-center;
+}
+.benefits__item div {
+  @apply w-[20rem] h-[20rem] flex items-center justify-center;
+}
+.benefits__item h3 {
+  @apply max-w-44;
+}
+.benefit-0 {
+  @apply bg-color-1 text-white rounded-t-full rounded-br-full;
+}
+.benefit-0::after {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #59766c;
+}
+.benefit-1 {
+  @apply bg-color-3 text-white rounded-b-full rounded-tr-full;
+}
+.benefit-1::after {
+  content: "";
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #e4decc;
+}
+.benefit-2 {
+  @apply bg-gray-200 rounded-t-full rounded-bl-full;
+}
+.benefit-2::after {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f57e9a;
+}
+.benefit-3 {
+  @apply bg-color-2 rounded-b-full rounded-tl-full;
+}
+.benefit-3::after {
+  content: "";
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #f57e9a;
+}
+/*control styles for slide and services in sess6*/
+
+#sess6__member {
+  @apply relative w-screen h-full overflow-hidden flex justify-end items-end pt-32;
+}
+
+#sess6__member img {
+  @apply absolute top-0 left-0 w-full h-full object-cover object-left z-0;
+}
+
+.sess6__member-container {
+  @apply relative container mx-auto z-10 flex flex-col items-center justify-center max-w-7xl h-full pt-10 bg-color-3 py-12 rounded-t-3xl;
+}
+
+.sess6__member-container h2 {
+  @apply font-zapf text-3xl lg:text-5xl font-bold text-color-1 mb-16 text-center;
+}
+
+.sess6__member-accordion {
+  @apply flex flex-col items-center justify-center gap-8;
+}
+
+.accordion-title {
+  @apply border-2 border-white flex items-end lg:items-center justify-between py-2 px-4 text-left text-base lg:text-xl font-zapf font-semibold text-white w-full;
+}
+
+.accordion-title svg {
+  @apply ml-8;
+}
+.accordion-body {
+  @apply px-6 py-4 bg-gray-200 text-color-3 font-zapf text-sm lg:text-lg;
+}
+
+/*control styles for slide and services in sess7*/
+
+#sess7__member {
+  @apply bg-color-1 py-16 flex items-center justify-center px-4;
+}
+.sess7__member-container {
+  @apply container mx-auto flex flex-col pt-10 items-center justify-center gap-y-12 bg-color-2 lg:flex-row lg:justify-between rounded-3xl lg:pl-16 relative;
+}
+
+.sess7__member-container img {
+  @apply max-w-sm h-full lg:max-w-3xl object-cover self-end;
+}
+.sess7__member-content {
+  @apply px-8 max-w-sm lg:max-w-2xl;
+}
+.sess7__member-content h2 {
+  @apply font-zapf text-3xl lg:text-5xl font-bold text-color-1 mb-8 lg:mb-16;
+}
+.sess7__member-content__text {
+  @apply font-zapf text-lg mb-10 max-w-lg;
+}
+.sess7__member-cta {
+  @apply bg-black rounded-full animate-pulse;
+}
+.sess7__member-container:before {
+  content: "";
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  display: none;
+  position: absolute;
+  top: -2.25rem;
+  right: 4rem;
+  background-color: white;
+  @apply lg:block;
+}
+.sess7__member-container:after {
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: none;
+  position: absolute;
+  bottom: -2rem;
+  left: 6rem;
+  background-color: #59766c;
+  @apply lg:block;
+}

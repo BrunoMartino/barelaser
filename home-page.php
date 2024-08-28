@@ -1,16 +1,13 @@
 <?php
 //Template Name: Home-zion
 get_header();
-?>
-<?php 
-    $img_url = get_stylesheet_directory_uri() . '/dist/imgs';
-    $sess1_video = get_field('video_bg');
-    $sess1_btns = get_field('sess1_btn_list');
-    $sess2_slides =get_field('sess2_slides');
-    $sess3_adv =get_field('membership_advantages');
-    $sess4_table =get_field('membership_table');
-    $sess5_fotona = get_field('fotona_services');
-    
+$img_url = get_stylesheet_directory_uri() . '/dist/imgs';
+$sess1_video = get_field('video_bg');
+$sess1_btns = get_field('sess1_btn_list');
+$sess2_slides =get_field('sess2_slides');
+$sess3_adv =get_field('membership_advantages');
+$sess4_table =get_field('membership_table');
+$sess5_fotona = get_field('fotona_services');
 ?>
 <main>
   <section id="sess1__home">

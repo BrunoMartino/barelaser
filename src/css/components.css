@@ -18,6 +18,19 @@
   background-color: #59766c;
 }
 
+.splide__pagination__page {
+  @apply bg-color-3 opacity-85;
+}
+.splide__pagination__page.is-active {
+  @apply bg-color-3 opacity-100;
+}
+.splide__arrow {
+  @apply w-8 h-16 bg-transparent opacity-100;
+}
+.splide__arrow svg {
+  @apply w-8 h-16 fill-[#0B5D51] stroke-[#0B5D51];
+}
+
 .cta-btn {
   @apply bg-color-1 py-3 px-6 font-zapf text-white text-base rounded-lg max-w-max;
 }
