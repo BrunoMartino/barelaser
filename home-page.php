@@ -145,7 +145,6 @@ $sess5_fotona = get_field('fotona_services');
    $shorcode_content = get_field('google_shortcode');
    if($shorcode_content) {
   ?>
-  <!-- adicionar regra que esconde a sessão se o shorcode não existir -->
   <section id="sess6__home">
     <div class="sess6__home-container">
       <h2><?php the_field('sess6_headline') ?></h2>

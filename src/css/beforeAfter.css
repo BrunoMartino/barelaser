@@ -1,0 +1,65 @@
+/*control bg images for mobile and desk*/
+.sess1__before-bg-desk {
+  @apply hidden lg:block;
+}
+
+.sess1__before-bg-mobile {
+  @apply block lg:hidden;
+}
+/*control styles for slide and services in sess1*/
+#sess1__before {
+  @apply mt-28 relative w-screen h-screen overflow-hidden;
+}
+
+#sess1__before img {
+  @apply absolute top-0 left-0 w-full h-full object-cover z-0;
+}
+
+.sess1__before-container {
+  @apply relative z-10 flex flex-col items-start justify-end h-full pb-20 px-8
+  lg:items-center max-w-5xl;
+}
+.sess1__before-container h1 {
+  @apply font-zapfDm text-5xl font-semibold text-center mb-16 lg:text-7xl lg:max-w-3xl  w-[15ch] lg:w-[10ch] lg:mr-72 px-8 lg:px-0;
+}
+.sess1__before-container h1::after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  display: block;
+  background: url("../imgs/about-headline-underline.svg") center center
+    no-repeat;
+}
+#sess2__before {
+  @apply bg-color-1 py-16;
+}
+.sess2__before-container {
+  @apply container mx-auto flex flex-col justify-center items-center max-w-6xl px-8;
+}
+
+.sess2__before-container h2,
+.sess2__before-container p {
+  @apply text-black font-zapf font-semibold text-2xl lg:text-3xl text-center mb-6 max-w-4xl;
+}
+.sess2__before-container p {
+  @apply text-xl lg:text-2xl mb-10 text-white;
+}
+.sess2__before-content__service {
+  @apply flex flex-col justify-center items-start my-8 lg:my-12;
+}
+
+.sess2__before-content__service h3 {
+  @apply font-zapf font-semibold text-2xl uppercase lg:text-3xl text-center mb-6 text-white;
+}
+.sess2__before-content__service-list {
+  @apply grid grid-cols-1 lg:grid-cols-3 max-w-6xl gap-8;
+}
+#sess2__before .bafg-slider-title {
+  @apply text-white text-2xl font-zapf uppercase font-bold;
+}
+#sess2__before .bafg-slider-description {
+  @apply text-black font-zapf;
+}
+#sess2__before .bafg_slider_readmore_button {
+  @apply py-3 px-6 font-zapf text-white text-base rounded-lg max-w-max bg-black;
+}

@@ -11,7 +11,7 @@
 }
 /*control styles for video bg and buttons in sess1*/
 #sess1__member {
-  @apply relative w-screen h-screen overflow-hidden;
+  @apply mt-28 relative w-screen h-screen overflow-hidden;
 }
 #sess1__member img {
   @apply absolute top-0 left-0 w-full h-full object-cover z-0;
@@ -259,14 +259,15 @@
   @apply flex flex-col items-center justify-center gap-8;
 }
 
-.accordion-title {
+.sess6__member-accordion .accordion-title {
+  background-color: #59766c !important;
   @apply border-2 border-white flex items-end lg:items-center justify-between py-2 px-4 text-left text-base lg:text-xl font-zapf font-semibold text-white w-full;
 }
 
-.accordion-title svg {
+.sess6__member-accordion .accordion-title svg {
   @apply ml-8;
 }
-.accordion-body {
+.sess6__member-accordion .accordion-body {
   @apply px-6 py-4 bg-gray-200 text-color-3 font-zapf text-sm lg:text-lg;
 }
 

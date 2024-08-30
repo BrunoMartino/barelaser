@@ -103,3 +103,27 @@ if (memberBenefitsSlide) {
   });
   benefitSlide.mount();
 }
+
+const teamSlides = document.getElementById("sess4__about-team__slides");
+
+if (teamSlides) {
+  const slideTeam = new Splide(teamSlides, {
+    type: "loop",
+    rewind: true,
+    pagination: true,
+    autoplay: true,
+    perPage: 4,
+    arrows: true,
+    gap: "32px",
+    breakpoints: {
+      960: {
+        perPage: 2,
+      },
+      640: {
+        perPage: 1,
+        width: "450px",
+      },
+    },
+  });
+  slideTeam.mount();
+}

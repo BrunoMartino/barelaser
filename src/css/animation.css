@@ -11,30 +11,40 @@
 .sess4__member-img,
 .sess4__member-content,
 .sess6__member-container,
-.sess7__member-content {
+.sess7__member-content,
+.sess1__about-container,
+.sess2__about-container img,
+.sess2__about-content,
+.sess3__about-container,
+.sess6__about-container {
   transition: ease-in-out 0.6s;
   opacity: 0;
 }
 .sess3__home-content.onShow,
 .sess5__img.onShow,
 .sess3__member-container.onShow,
-.sess7__member-content.onShow {
+.sess7__member-content.onShowm,
+.sess2__about-container img.onShow {
   animation: show-left 0.5s forwards;
 }
 .sess3__home-img.onShow,
 .sess5__home-content.onShow,
 #sess2__member-plans__slides.onShow,
-.sess6__member-container.onShow {
+.sess6__member-container.onShow,
+.sess2__about-content.onShow {
   animation: show-right 0.5s forwards;
 }
 .sess1__home-wrapper.onShow,
 .membership__table.onShow,
 .sess8__home-newsform.onShow,
 .sess1__member-container.onShow,
-.sess4__member-content.onShow {
+.sess4__member-content.onShow,
+.sess1__about-container.onShow,
+.sess6__about-container.onShow {
   animation: show-up 0.5s forwards;
 }
-.sess4__member-img.onShow {
+.sess4__member-img.onShow,
+.sess3__about-container.onShow {
   animation: show-down 0.5s forwards;
 }
 

@@ -1,0 +1,181 @@
+/*control bg images for mobile and desk*/
+.sess1__about-bg-desk {
+  @apply hidden lg:block;
+}
+
+.sess1__about-bg-mobile {
+  @apply block lg:hidden;
+}
+/*control styles for slide and services in sess1*/
+#sess1__about {
+  @apply mt-28 relative w-screen h-screen overflow-hidden;
+}
+
+#sess1__about img {
+  @apply absolute top-0 left-0 w-full h-full object-cover z-0;
+}
+
+.sess1__about-container {
+  @apply relative z-10 flex flex-col items-start justify-end h-full text-white pb-20 px-8
+  lg:justify-center lg:items-center max-w-5xl;
+}
+.sess1__about-container h1 {
+  @apply font-zapfDm text-5xl font-semibold text-center mb-8 lg:mb-16 lg:text-7xl lg:max-w-3xl;
+}
+.sess1__about-container h1::after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  display: block;
+  background: url("../imgs/about-headline-underline.svg") center center
+    no-repeat;
+}
+.sess1__about-cta {
+  @apply flex flex-col lg:flex-row gap-4 lg:gap-8;
+}
+.sess1__about-cta a {
+  @apply rounded-full;
+}
+.sess1__about-cta a:first-child {
+  @apply bg-black;
+}
+/*control styles for slide and services in sess2*/
+#sess2__about {
+  @apply bg-color-1 py-16;
+}
+.sess2__about-container {
+  @apply container mx-auto px-8 flex flex-col-reverse lg:flex-row lg:justify-evenly items-center justify-center;
+}
+.sess2__about-container img {
+  @apply max-w-sm  h-full rounded-t-[25%] object-cover lg:max-w-3xl;
+}
+.sess2__about-content {
+  @apply max-w-sm lg:max-w-lg mb-8 lg:mb-0;
+}
+.sess2__about-content p {
+  @apply text-white text-lg lg:text-2xl font-zapf mb-4;
+}
+.sess2__about-content p:last-child {
+  @apply mb-0;
+}
+/*control styles for slide and services in sess3*/
+#sess3__about {
+  @apply bg-color-3 py-16;
+}
+.sess3__about-container {
+  @apply container mx-auto p-8 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:max-w-5xl;
+}
+.mission__item {
+  @apply flex flex-col items-center justify-start w-full;
+}
+.mission__item-title-0,
+.mission__item-title-1,
+.mission__item-title-2 {
+  @apply w-60 h-52 flex flex-col items-center justify-center font-zapf font-bold uppercase text-2xl mb-6;
+}
+.mission__item-title-0 {
+  @apply text-white  bg-color-1 rounded-b-full rounded-tr-full;
+}
+.mission__item-title-1 {
+  @apply bg-gray-100 rounded-t-full rounded-bl-full;
+}
+.mission__item-title-2 {
+  @apply bg-color-2 rounded-b-full rounded-tl-full;
+}
+.mission__item-content {
+  @apply max-w-60 font-zapf text-white text-center text-xl;
+}
+/*control styles for slide and services in sess4*/
+
+#sess4__about {
+  @apply bg-gray-100 py-16;
+}
+#sess4__about h2 {
+  @apply text-color-1 font-zapf capitalize font-semibold text-3xl lg:text-5xl mb-8 animate-pulse text-center;
+}
+#sess4__about-team__slides {
+  @apply container mx-auto px-14;
+}
+#sess4__about-team__slides .splide__track {
+  @apply pb-10;
+}
+.team__item {
+  @apply w-full h-[480px] rounded-t-full rounded-b-full overflow-hidden relative;
+}
+.team__item img {
+  @apply w-full h-[480px] object-cover rounded-t-full rounded-b-full;
+}
+.team__item-content {
+  @apply absolute inset-0 flex flex-col justify-end items-center pb-20;
+}
+.team__item-content h3 {
+  @apply font-zapfDm font-semibold uppercase text-2xl text-white text-center py-2 px-5 bg-color-1 mb-4;
+}
+.team__item-content p {
+  @apply font-zapfDm font-semibold text-center text-white capitalize text-lg bg-color-3 py-2 px-5;
+}
+/*control styles for slide and services in sess5*/
+
+#sess5__about {
+  @apply py-24 bg-color-3;
+}
+.sess5__about-container {
+  @apply container mx-auto flex flex-col items-center justify-center px-8;
+}
+.sess5__about-container h2 {
+  @apply font-zapfDm text-white text-center font-semibold text-3xl lg:text-5xl mb-16;
+}
+#sess5__about > div > div > div > div.grw-header > div {
+  background-color: #fafafa !important;
+}
+#sess5__about
+  > div
+  > div
+  > div
+  > div.grw-content
+  > div.grw-dots
+  > div.grw-dot.active {
+  background-color: white !important;
+}
+/*control styles for slide and services in sess6*/
+
+#sess6__about {
+  @apply bg-color-1 py-16;
+}
+.sess6__about-container {
+  @apply container mx-auto flex flex-col items-center justify-center px-8;
+}
+.sess6__about-container h2 {
+  @apply font-zapfDm text-white text-center font-semibold text-3xl lg:text-5xl mb-16;
+}
+
+.sess6_about-tabs__nav {
+  @apply grid grid-cols-1 lg:grid-cols-4 gap-6 justify-center items-center max-w-6xl;
+}
+.sess6__about-tab__item {
+  @apply flex justify-center items-center;
+}
+
+.sess6__about-tab__item a {
+  @apply bg-white text-color-1 rounded-full;
+}
+.sess6__about-tab__item a.active,
+.sess6__about-tab__item a:hover {
+  @apply bg-color-3 text-white;
+}
+
+.sess6__about-accordion {
+  @apply py-8 lg:pt-14 flex flex-col max-w-4xl lg:w-[1024px];
+}
+
+.sess6__about-accordion .accordion-title {
+  @apply flex items-end bg-gray-100 lg:items-center justify-between py-3 px-5 text-left text-base lg:text-xl font-zapf font-semibold text-black rounded-full w-full box-border mt-5;
+}
+
+.sess6__about-accordion .accordion-title svg {
+  @apply hidden;
+}
+
+.sess6__about-accordion .accordion-body {
+  @apply px-6 py-4 bg-gray-300 text-black font-zapf text-sm lg:text-lg w-full box-border my-5 rounded-3xl;
+}
