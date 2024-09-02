@@ -17,7 +17,12 @@
 .bg-color-3 {
   background-color: #59766c;
 }
+/*default styles for cta. some sections has customize rounded and bg color*/
+.cta-btn {
+  @apply bg-color-1 py-3 px-6 font-zapf text-white text-base rounded-lg max-w-max;
+}
 
+/*styles for splide arrow*/
 .splide__pagination__page {
   @apply bg-color-3 opacity-85;
 }
@@ -31,13 +36,76 @@
   @apply w-8 h-16 fill-[#0B5D51] stroke-[#0B5D51];
 }
 
-.cta-btn {
-  @apply bg-color-1 py-3 px-6 font-zapf text-white text-base rounded-lg max-w-max;
-}
+/*styles for icon in header sub-menu*/
 .triangle-down {
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid black;
+}
+
+/*styles for membership card in home-page and membership-page*/
+
+#membership__cards {
+  @apply container mx-auto px-11 lg:px-4;
+}
+#membership__cards .splide__track {
+  @apply h-[95vh] pb-96 relative;
+}
+#membership__cards ul {
+  @apply h-[95vh];
+}
+.plan__item {
+  @apply max-w-sm  h-full rounded-2xl flex flex-col items-stretch;
+}
+.plan__item-content {
+  @apply py-8 px-6 h-full font-zapf bg-gray-100 shadow-md;
+}
+.plan__item-content h3 {
+  @apply font-bold text-3xl lg:text-4xl py-2 px-4 text-center rounded-full mb-3;
+}
+.plan-title-0 {
+  @apply text-white bg-gradient-to-b from-[#4B4B4B] to-[#2E2E2E];
+}
+.plan-title-1 {
+  @apply text-white bg-gradient-to-b from-[#F5C300] to-[#D4A700];
+}
+.plan-title-2 {
+  @apply text-white bg-gradient-to-b from-[#B0B0B0] to-[#9E9E9E];
+}
+.plan-title-3 {
+  @apply text-white bg-gradient-to-b from-[#6E6E9E] to-[#4A4A7E];
+}
+.plan__price {
+  @apply text-2xl lg:text-3xl font-bold text-center mb-2;
+}
+.plan__description {
+  @apply text-sm;
+}
+.plan__description p {
+  @apply mb-2 lg:mb-3;
+}
+.plan__service {
+  @apply flex items-start;
+}
+.plan__service:before {
+  content: "";
+  width: 0.25rem;
+  height: 0.25rem;
+  display: block;
+  background: black;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
+  flex-shrink: 0;
+}
+.plan__additional {
+  @apply font-bold;
+}
+.plan__excluded {
+  @apply capitalize;
+}
+.plan__item a {
+  @apply self-center mt-6;
 }

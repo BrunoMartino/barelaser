@@ -44,65 +44,6 @@
   @apply text-color-1 font-zapf capitalize font-semibold text-3xl lg:text-5xl mb-8 animate-pulse;
 }
 
-#sess2__member-plans__slides {
-  @apply container mx-auto px-11 lg:px-4;
-}
-#sess2__member-plans__slides .splide__track {
-  @apply h-[85vh] pb-96 relative;
-}
-#sess2__member-plans__slides ul {
-  @apply h-[85vh];
-}
-.plan__item {
-  @apply max-w-sm bg-gray-100 shadow-md h-full rounded-2xl flex flex-col items-stretch;
-}
-.plan__item-content {
-  @apply py-8 px-6 h-full font-zapf;
-}
-.plan__item-content h3 {
-  @apply font-bold text-3xl lg:text-4xl py-2 px-4 text-center rounded-full mb-3;
-}
-.plan-title-0 {
-  @apply text-white bg-gradient-to-b from-[#4B4B4B] to-[#2E2E2E];
-}
-.plan-title-1 {
-  @apply text-white bg-gradient-to-b from-[#F5C300] to-[#D4A700];
-}
-.plan-title-2 {
-  @apply text-white bg-gradient-to-b from-[#B0B0B0] to-[#9E9E9E];
-}
-.plan-title-3 {
-  @apply text-white bg-gradient-to-b from-[#6E6E9E] to-[#4A4A7E];
-}
-.plan__price {
-  @apply text-2xl lg:text-3xl font-bold text-center mb-2;
-}
-.plan__description {
-  @apply text-sm;
-}
-.plan__description p {
-  @apply mb-2 lg:mb-3;
-}
-.plan__service {
-  @apply flex items-start;
-}
-.plan__service:before {
-  content: "";
-  width: 0.25rem;
-  height: 0.25rem;
-  display: block;
-  background: black;
-  border-radius: 50%;
-  margin-top: 0.5rem;
-  margin-right: 0.25rem;
-  flex-shrink: 0;
-}
-.plan__additional {
-  @apply font-bold;
-}
-.plan__excluded {
-  @apply capitalize;
-}
 /*control styles for slide and services in sess3*/
 #sess3__member {
   @apply relative w-screen h-[85vh] overflow-hidden;

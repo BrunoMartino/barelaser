@@ -23,7 +23,7 @@
 .sess3__home-content.onShow,
 .sess5__img.onShow,
 .sess3__member-container.onShow,
-.sess7__member-content.onShowm,
+.sess7__member-content.onShow,
 .sess2__about-container img.onShow {
   animation: show-left 0.5s forwards;
 }

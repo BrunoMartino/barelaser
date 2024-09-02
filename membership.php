@@ -19,7 +19,7 @@ $sess6_accordion = get_field('questions_answers_buttons')
   </section>
   <section id="sess2__member">
     <h2><?= the_field('sess2_headline') ?></h2>
-    <div id="sess2__member-plans__slides" class="splide" data-anima="scroll">
+    <div id="membership__cards" class="splide" data-anima="scroll">
       <div class="splide__track">
         <ul class="splide__list">
           <?php foreach ($sess2_slides as $index => $slide) {?>
@@ -35,6 +35,7 @@ $sess6_accordion = get_field('questions_answers_buttons')
               <p class="plan__excluded"><?= $slide['excluded_services'] ?></p>
             </div>
             </div>
+            <a href="<?= $slide['cta_link'] ?>" class="cta-btn membership__cards-cta"><?= $slide['cta_label'] ?></a>
           </li>
           <?php }?>
         </ul>

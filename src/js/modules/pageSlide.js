@@ -26,7 +26,7 @@ if (productSlide) {
   });
   sess2Slide.mount();
 }
-const memberPlanSlides = document.getElementById("sess2__member-plans__slides");
+const memberPlanSlides = document.getElementById("membership__cards");
 
 if (memberPlanSlides) {
   const plansSlides = new Splide(memberPlanSlides, {

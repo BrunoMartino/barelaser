@@ -36,7 +36,7 @@
         
     </div>
     <div class="header__cart">
-        <a id="elementor-menu-cart__toggle_button"  href="/cart" ><img src="<?=$img_url . '/cart.svg'?>" alt="my cart">
+        <a id="cart-btn"  href="/cart" ><img src="<?=$img_url . '/cart.svg'?>" alt="my cart">
         <?php if($cart_count) { ?>
           <span class='header__cart-count'><?= $cart_count; ?></span>
         <?php };?>

@@ -6,7 +6,7 @@ $sess1_video = get_field('video_bg');
 $sess1_btns = get_field('sess1_btn_list');
 $sess2_slides =get_field('sess2_slides');
 $sess3_adv =get_field('membership_advantages');
-$sess4_table =get_field('membership_table');
+$sess4_slides =get_field('sess4_membership_slides');
 $sess5_fotona = get_field('fotona_services');
 ?>
 <main>
@@ -72,51 +72,28 @@ $sess5_fotona = get_field('fotona_services');
     </div>
   </section>
   <section id="sess4__home">
-    <div class="sess4__home-container">
-    <div class="overflow-x-auto lg:overflow-x-hidden pb-8">
-    <table class="membership__table" data-anima="scroll">
-    <thead>
-    <tr>
-      <th>Feature/Benefit</th>
-        <?php foreach( $sess4_table['tier_line'] as $line) { ?>
-          <th><?= $line['tier_title'] ?></th>
-        <?php } ?>
-    </tr>
-      </thead>
-      <tbody>
-    <tr>
-        <th>Monthly Service Options</th>
-        <?php foreach( $sess4_table['services_line'] as $line) { ?>
-          <td><?= $line['services'] ?></td>
-        <?php } ?>
-    </tr>
-    <tr>
-        <th>Additional Discounts</th>
-        <?php foreach( $sess4_table['discounts_line'] as $line) { ?>
-          <td><?= $line['discounts'] ?></td>
-        <?php } ?>
-    </tr>
-    <tr>
-        <th>Special Offers</th>
-        <?php foreach( $sess4_table['offers_line'] as $line) { ?>
-          <td><?= $line['offers'] ?></td>
-        <?php } ?>
-    </tr>
-    <tr>
-        <th>Investment</th>
-        <?php foreach( $sess4_table['investiment_line'] as $line) { ?>
-          <td><p class="membership__table-price"><?= $line['prices'] ?></p></td>
-        <?php } ?>
-    </tr>
-    <tr>
-        <th></th>
-        <?php foreach( $sess4_table['cta_line'] as $line) { ?>
-          <td><a href="<?= $line['cta_link'] ?>" class="cta-btn membership_table-cta"><?= $line['cta_label'] ?></a></td>
-        <?php } ?>
-    </tr>
-    </tbody>
-</table>
-</div> 
+    <h2><?= the_field('sess2_headline') ?></h2>
+    <div id="membership__cards" class="splide" data-anima="scroll">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <?php foreach ($sess4_slides as $index => $slide) {?>
+          <li class="plan__item splide__slide">
+            <div class="plan__item-content">
+            <h3 class="<?= "plan-title-" . $index ?>"><?= $slide['plan_title'] ?></h3>
+            <p class="plan__price"><?= $slide['plan_price'] ?></p>
+            <div class="plan__description">
+              <?php foreach ($slide['plan_benefits'] as $benefits) { ?>
+              <p class="plan__service"> <?= $benefits['monthly_options'] ?></p>
+              <?php }?>
+              <p class="plan__additional"><?= $slide['additional_benefits'] ?></p>
+              <p class="plan__excluded"><?= $slide['excluded_services'] ?></p>
+            </div>
+            </div>
+            <a href="<?= $slide['cta_link'] ?>" class="cta-btn membership__cards-cta"><?= $slide['cta_label'] ?></a>
+          </li>
+          <?php }?>
+        </ul>
+      </div>
     </div>
   </section>
   <section  id="sess5__home">

@@ -22,7 +22,7 @@ $sess2__before_after = get_field('services_before_after');
           <ul class="sess2__before-content__service-list">
           <?php foreach($service['service_results'] as $item) {?>
             <li>
-              <div class="service__content">
+              <div class="sess2__before-service__content">
                 <?php  echo do_shortcode($item['img_shortcode']) ?>  
               </div>
             </li>

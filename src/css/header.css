@@ -69,7 +69,7 @@
 .header__cart {
   @apply order-2 lg:order-5 relative;
 }
-#elementor-menu-cart__toggle_button img {
+#cart-btn img {
   @apply w-12 h-12;
 }
 .header__cart-count {
