@@ -107,5 +107,5 @@
   @apply capitalize;
 }
 .plan__item a {
-  @apply self-center mt-6;
+  @apply self-center mt-4 bg-color-3 rounded-full;
 }

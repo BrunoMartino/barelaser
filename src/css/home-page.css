@@ -124,37 +124,7 @@
   @apply container mx-auto flex items-center justify-center px-8;
 }
 
-.membership__table {
-  @apply font-zapf overflow-hidden border-collapse table-fixed w-full;
-}
-
-.membership__table thead th,
-.membership__table tbody tr th,
-.membership__table tbody tr td {
-  @apply py-2 px-4 border-2 border-gray-200 min-w-[280px] w-[280px];
-}
-.membership__table thead th:first-child {
-  @apply text-black;
-}
-.membership__table tbody tr th {
-  @apply text-lg lg:text-2xl;
-}
-.membership__table tbody tr:last-child th,
-.membership__table tbody tr:last-child td {
-  @apply border-none pt-6 text-center;
-}
-.membership__table tbody tr th p,
-.membership__table tbody tr td p {
-  @apply text-xs md:text-sm font-zapf;
-}
-
-.membership_table-cta {
-  @apply bg-color-3 text-white font-semibold text-sm lg:text-base rounded-full;
-}
-.membership__table thead th,
-.membership__table tbody tr td .membership__table-price {
-  @apply text-color-1 text-3xl text-center font-semibold;
-}
+/*for cards styles see membership__card in components file*/
 
 /*control styles for slide and services in sess5*/
 

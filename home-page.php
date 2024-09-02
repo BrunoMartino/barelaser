@@ -36,7 +36,7 @@ $sess5_fotona = get_field('fotona_services');
         <ul class="splide__list">
           <?php foreach($sess2_slides as $slide) { ?>
             <li class="splide__slide product__slide">
-            <a href="">
+            <a href="<?= $slide['link'] ?>">
             <img src="<?= $slide['image'] ?>" alt="<?= $slide['title'] ?>">
             <div class="product__bg-gradient "></div>
             <div class="product__slide-content">
