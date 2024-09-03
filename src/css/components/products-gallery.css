@@ -1,0 +1,29 @@
+#category__product-container {
+  @apply container mx-auto py-16 px-8;
+}
+.category__product-list {
+  @apply grid grid-cols-1 gap-y-12 gap-x-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+}
+
+.category__product-thumb {
+  @apply max-w-sm flex flex-col items-center justify-center bg-gray-100 shadow-md;
+}
+.category__product-thumb img {
+  @apply w-full h-full object-cover;
+}
+
+.category__product-thumb__content {
+  @apply font-zapf text-color-1 p-4 pb-6;
+}
+.category__product-thumb__content h3 {
+  @apply text-xl uppercase font-semibold mb-3;
+}
+.product__price {
+  @apply text-xl mb-2;
+}
+.category__product-thumb__content a {
+  @apply uppercase;
+}
+.afterpay__info {
+  @apply py-2;
+}

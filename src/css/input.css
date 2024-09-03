@@ -1,6 +1,9 @@
 @import "@splidejs/splide/dist/css/splide.min.css";
 @import "./fonts.css";
-@import "./components.css";
+
+@import "./components/general-styles.css";
+@import "./components/membership-cards.css";
+@import "./components/products-gallery.css";
 
 @import "./header.css";
 @import "./footer.css";
@@ -8,6 +11,7 @@
 @import "./membership.css";
 @import "./aboutUs.css";
 @import "./beforeAfter.css";
+@import "./archive-product.css";
 
 @import "./animation.css";
 

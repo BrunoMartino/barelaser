@@ -1,0 +1,78 @@
+.sess1__archive-bg-desk {
+  @apply hidden lg:block;
+}
+.sess1__archive-bg-mobile {
+  @apply block lg:hidden;
+}
+/*control styles for slide and services in sess1*/
+#sess1__archive {
+  @apply mt-28 relative w-screen h-screen overflow-hidden;
+}
+
+#sess1__archive img {
+  @apply absolute top-0 left-0 w-full h-full object-cover z-0;
+}
+
+.sess1__archive-container {
+  @apply relative z-10 flex flex-col items-start justify-end h-full pb-20 px-8
+  lg:items-center max-w-5xl;
+}
+.sess1__archive-container h1 {
+  @apply font-zapfDm text-5xl font-semibold text-white lg:text-7xl lg:max-w-3xl  w-[15ch] lg:w-[10ch] lg:mr-72 px-8 lg:px-0;
+}
+.sess1__archive-container p {
+  @apply font-zapfDm text-5xl font-semibold mb-12 lg:text-7xl lg:max-w-3xl  w-[15ch] lg:w-[10ch] lg:mr-72 px-8 lg:px-0;
+}
+.sess1__archive-container p:after {
+  content: "";
+  width: 70%;
+  height: 10px;
+  display: block;
+  background: url("../imgs/about-headline-underline.svg") center center
+    no-repeat;
+}
+.sess1__archive-ctas__wrapper {
+  @apply flex flex-row flex-wrap px-8  gap-6 justify-start items-center lg:ml-72 lg:px-0 w-full;
+}
+.sess1__archive-ctas__wrapper a:first-child {
+  @apply bg-black rounded-full;
+}
+.sess1__archive-ctas__wrapper a:nth-child(2) {
+  @apply bg-color-3 rounded-full;
+}
+/*control styles for slide and services in sess2*/
+
+#sess2__archive {
+  @apply py-16 bg-color-1;
+}
+.sess2__archive-container {
+  @apply container mx-auto flex flex-col-reverse  justify-center items-center lg:flex-row gap-16 px-8;
+}
+.sess2__archive-container img {
+  @apply max-w-sm lg:max-w-xl h-full object-cover rounded-t-full;
+}
+.sess2__archive-content {
+  @apply max-w-sm lg:max-w-xl flex flex-col items-start;
+}
+
+.sess2__archive-content h2 {
+  @apply text-white font-zapf capitalize font-semibold text-3xl lg:text-5xl mb-8 animate-pulse;
+}
+.sess2_archive-content__text {
+  @apply mb-6;
+}
+.sess2_archive-content__text p {
+  @apply font-zapf text-white mb-3 text-lg lg:text-2xl;
+}
+
+.sess2__archive-content .sess2__archive-cta {
+  @apply bg-white text-color-1 rounded-full;
+}
+
+/*control styles for slide and services in sess3*/
+
+#sess3__archive {
+  @apply container mx-auto flex items-center justify-center;
+}
+
+/*for the products gallery, check the components folder*/
