@@ -32,3 +32,6 @@ header {
     transform: translate3d(0, 0, 0) !important;
   }
 }
+body {
+  @apply mt-28;
+}
