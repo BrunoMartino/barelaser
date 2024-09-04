@@ -6,7 +6,7 @@
 }
 /*control styles for slide and services in sess1*/
 #sess1__archive {
-  @apply mt-28 relative w-screen h-screen overflow-hidden;
+  @apply relative w-screen h-screen overflow-hidden;
 }
 
 #sess1__archive img {
@@ -49,7 +49,7 @@
   @apply container mx-auto flex flex-col-reverse  justify-center items-center lg:flex-row gap-16 px-8;
 }
 .sess2__archive-container img {
-  @apply max-w-sm lg:max-w-xl h-full object-cover rounded-t-full;
+  @apply w-[24rem] lg:w-[36rem] h-full object-cover rounded-t-full;
 }
 .sess2__archive-content {
   @apply max-w-sm lg:max-w-xl flex flex-col items-start;

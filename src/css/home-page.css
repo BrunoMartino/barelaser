@@ -1,6 +1,6 @@
 /*control styles for video bg and buttons in sess1*/
 #sess1__home {
-  @apply mt-28 relative w-screen h-screen overflow-hidden;
+  @apply relative w-screen h-screen overflow-hidden;
 }
 .sess1__home-video__bg,
 .bg-placeholder {
@@ -86,8 +86,8 @@
 .sess3__home-container {
   @apply container mx-auto flex flex-col lg:flex-row items-start justify-between px-8;
 }
-.sess3__home-img {
-  @apply lg:max-w-3xl h-full object-cover;
+.sess3__home-img img {
+  @apply w-[24rem] lg:w-[48rem] h-full object-cover;
 }
 .sess3__home-content {
   @apply my-20 lg:mt-40 text-white;
@@ -117,7 +117,7 @@
 /*control styles for slide and services in sess4*/
 
 #sess4__home {
-  @apply py-28;
+  @apply pt-28 mb-28 w-screen h-screen;
 }
 
 .sess4__home-container {
@@ -136,7 +136,7 @@
   @apply container mx-auto flex flex-col lg:flex-row items-center gap-x-40 px-8;
 }
 .sess5__img img {
-  @apply w-[600px] h-full object-cover rounded-t-full;
+  @apply w-[24rem] lg:w-[37rem] h-full object-cover rounded-t-full;
 }
 .sess5__home-content__container {
   @apply grid grid-cols-1 lg:grid-cols-2 lg:items-end mt-10 lg:mt-0 gap-y-12;

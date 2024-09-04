@@ -11,7 +11,7 @@
 }
 /*control styles for video bg and buttons in sess1*/
 #sess1__member {
-  @apply mt-28 relative w-screen h-screen overflow-hidden;
+  @apply relative w-screen h-screen overflow-hidden;
 }
 #sess1__member img {
   @apply absolute top-0 left-0 w-full h-full object-cover z-0;
@@ -37,12 +37,13 @@
 
 /*control styles for slide and services in sess2*/
 #sess2__member {
-  @apply container mx-auto py-16 lg:py-20 flex flex-col items-center;
+  @apply container mx-auto py-16 lg:py-20 flex flex-col items-center h-screen;
 }
 
 #sess2__member h2 {
   @apply text-color-1 font-zapf capitalize font-semibold text-3xl lg:text-5xl mb-8 animate-pulse;
 }
+/*for cards styles see membership__card in components file*/
 
 /*control styles for slide and services in sess3*/
 #sess3__member {
@@ -83,7 +84,7 @@
   @apply container mx-auto px-8 flex flex-col-reverse items-center lg:flex-row lg:justify-evenly lg:items-center gap-y-16;
 }
 .sess4__member-img {
-  @apply max-w-sm lg:max-w-md h-full object-cover rounded-t-full;
+  @apply w-[24rem] lg:w-[28rem] h-full object-cover rounded-t-full;
 }
 .sess4__member-content {
   @apply text-white font-zapf max-w-md lg:pt-16;
@@ -222,7 +223,7 @@
 }
 
 .sess7__member-container img {
-  @apply max-w-sm h-full lg:max-w-3xl object-cover self-end;
+  @apply h-full w-[24rem] lg:w-[48rem] object-cover self-end;
 }
 .sess7__member-content {
   @apply px-8 max-w-sm lg:max-w-2xl;

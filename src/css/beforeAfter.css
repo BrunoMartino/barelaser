@@ -8,7 +8,7 @@
 }
 /*control styles for slide and services in sess1*/
 #sess1__before {
-  @apply mt-28 relative w-screen h-screen overflow-hidden;
+  @apply relative w-screen h-screen overflow-hidden;
 }
 
 #sess1__before img {

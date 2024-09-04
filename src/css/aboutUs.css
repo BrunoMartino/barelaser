@@ -8,7 +8,7 @@
 }
 /*control styles for slide and services in sess1*/
 #sess1__about {
-  @apply mt-28 relative w-screen h-screen overflow-hidden;
+  @apply relative w-screen h-screen overflow-hidden;
 }
 
 #sess1__about img {
@@ -47,7 +47,7 @@
   @apply container mx-auto px-8 flex flex-col-reverse lg:flex-row lg:justify-evenly items-center justify-center;
 }
 .sess2__about-container img {
-  @apply max-w-sm  h-full rounded-t-[25%] object-cover lg:max-w-3xl;
+  @apply w-[24rem]  h-full rounded-t-[25%] object-cover lg:w-[48rem];
 }
 .sess2__about-content {
   @apply max-w-sm lg:max-w-lg mb-8 lg:mb-0;

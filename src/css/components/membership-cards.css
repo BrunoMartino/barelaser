@@ -4,10 +4,10 @@
   @apply container mx-auto px-11 lg:px-4;
 }
 #membership__cards .splide__track {
-  @apply h-[95vh] pb-96 relative;
+  @apply h-screen relative;
 }
 #membership__cards ul {
-  @apply h-[95vh];
+  @apply h-screen;
 }
 .plan__item {
   @apply max-w-sm  h-full rounded-2xl flex flex-col items-stretch;

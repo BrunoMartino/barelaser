@@ -44,6 +44,3 @@
   border-right: 10px solid transparent;
   border-top: 10px solid black;
 }
-body {
-  @apply mt-28;
-}
